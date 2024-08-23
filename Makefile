@@ -1,10 +1,8 @@
-.PHONY: build up down logs migrate superuser
-
 build:
     docker-compose build
 
 up:
-    docker-compose up -d
+	docker compose -f docker-compose.yml up -d
 
 down:
     docker-compose down
